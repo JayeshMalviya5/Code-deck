@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Code-deck/static/css/main.5ec454fd.css",
+    "main.js": "/Code-deck/static/js/main.fe6d5963.js",
+    "static/js/787.d0ccd60f.chunk.js": "/Code-deck/static/js/787.d0ccd60f.chunk.js",
+    "static/media/logo.svg": "/Code-deck/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/Code-deck/index.html",
+    "main.5ec454fd.css.map": "/Code-deck/static/css/main.5ec454fd.css.map",
+    "main.fe6d5963.js.map": "/Code-deck/static/js/main.fe6d5963.js.map",
+    "787.d0ccd60f.chunk.js.map": "/Code-deck/static/js/787.d0ccd60f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5ec454fd.css",
+    "static/js/main.fe6d5963.js"
+  ]
+}
