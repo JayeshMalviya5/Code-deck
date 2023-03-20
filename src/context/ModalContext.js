@@ -13,6 +13,7 @@ function ModalProvider({ children }) {
   const [isOpenModal, setIsOpenModal] = useState({ ...initialModalFields });
   const openModal = (value) => {
     setIsOpenModal;
+    // 
   };
 
   const closeModal = () => {
