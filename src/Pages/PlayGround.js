@@ -9,7 +9,6 @@ import EditContainer from "../components/Playground/EditContainer";
 import InputConsole from "../components/Playground/InputConsole"
 import OutputConsole from "../components/Playground/OutputConsole"
 import Modal from "../components/Card/Modal";
-
 function PlayGround() {
   const { folderID, playgroundID } = useParams();
   const { folders, savePlayground } = useContext(PlaygroundContext);

@@ -19,6 +19,7 @@
     "@uiw/codemirror-theme-vscode": "^4.19.11",
     "@uiw/codemirror-theme-xcode": "^4.19.11",
     "@uiw/react-codemirror": "^4.19.11",
+    "axios": "^1.4.0",
     "buffer": "^6.0.3",
     "gh-pages": "^5.0.0",
     "i": "^0.3.7",
