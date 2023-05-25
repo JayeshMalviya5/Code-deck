@@ -27,7 +27,7 @@ function CodeEditor({
   setCurrentCode,
   isFullScreen,
   currentLanguage,
-  currentTheme,
+  currentTheme, 
 }) {
   const [theme, setTheme] = useState(githubDark);
   const [language, setLanguage] = useState(javascript);

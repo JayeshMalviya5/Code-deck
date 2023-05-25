@@ -2,8 +2,8 @@ import React from "react";
 import { BiExport } from "react-icons/bi";
 function OutputConsole({ currentOutput }) {
   return (
-    <div className="flex flex-col">
-      <div className="bg-[#ededed] p-4 flex justify-between">
+    <div className="flex flex-col ">
+      <div className="bg-[#ededed] p-4 flex justify-between ">
         <h3 className="font-bold">Output :</h3>
         <a
           className="flex font-semibold gap-4"
@@ -16,7 +16,7 @@ function OutputConsole({ currentOutput }) {
         </a>
       </div>
       <textarea
-        className="h-[calc(50vh_-_8em)] resize-none"
+        className="h-[calc(50vh_-_8em)] resize-none p-4"
         value={currentOutput}
         disabled
       />

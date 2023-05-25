@@ -1,9 +1,16 @@
-import React from 'react'
+import React from "react";
 
 function Loading() {
   return (
-    <div>Loading</div>
-  )
+    <div style={{ textAlign: "center", display: "flex", justifyContent: "center" }}>
+      <img
+        src={require("./Spinner-1s-200px.gif")}
+        alt=""
+        width={"50px"}
+        height={"auto"}
+      />
+    </div>
+  );
 }
 
-export default Loading
+export default Loading;

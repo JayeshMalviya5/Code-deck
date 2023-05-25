@@ -43,7 +43,8 @@ function RightPanelHomeScreen() {
             <div className="flex gap-4 items-center">
               <BiEditAlt
                 size={"1.5em"}
-                onClick={() => {
+                onClick={(e) => {
+                  e.stopPropagation();
                   openModal({
                     show: true,
                     modalType: 4,
@@ -56,7 +57,10 @@ function RightPanelHomeScreen() {
               />
               <IoTrashOutline
                 size={"1.5em"}
-                onClick={() => deleteFolder(folderId)}
+                onClick={(e) => {
+                  e.stopPropagation();
+                  deleteFolder(folderId);
+                }}
               />
               <h4
                 onClick={() => {
@@ -99,7 +103,8 @@ function RightPanelHomeScreen() {
                     <div className="flex gap-4 items-center">
                       <BiEditAlt
                         size={"1.5em"}
-                        onClick={() =>
+                        onClick={(e) => {
+                          e.stopPropagation();
                           openModal({
                             show: true,
                             modalType: 5,
@@ -107,12 +112,15 @@ function RightPanelHomeScreen() {
                               folderId: folderId,
                               cardID: playgroundId,
                             },
-                          })
-                        }
+                          });
+                        }}
                       />
                       <IoTrashOutline
                         size={"1.5em"}
-                        onClick={() => deleteCard(folderId, playgroundId)}
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          deleteCard(folderId, playgroundId);
+                        }}
                       />
                     </div>
                   </div>
