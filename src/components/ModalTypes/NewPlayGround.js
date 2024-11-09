@@ -33,7 +33,7 @@ function NewPlayGround() {
           type="text"
           value={cardTitle}
           onChange={(e) => setCardTitle(e.target.value)}
-          className="border-[.5px] text-sm border-gray-50 rounded-lg shadow-sm p-2 w-full"
+          className="border-[.5px] text-sm border-gray-50 rounded-lg bg-slate-200 shadow-sm p-2 w-full"
         />
         <Select
           options={languageOptions} // array of objects;
@@ -45,7 +45,7 @@ function NewPlayGround() {
             addPlayground(folderId, cardTitle, language.value);
             closeModal();
           }}
-          className="p-3 w-36 text-black bg-white rounded-lg font-semibold border-[.5px] border-gray-50 shadow-lg"
+          className="p-3 w-36 text-black bg-white rounded-lg font-semibold  border-gray-600 shadow-md"
         >
           Create Playground
         </button>

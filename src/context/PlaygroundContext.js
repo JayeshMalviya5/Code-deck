@@ -34,7 +34,7 @@ System.out.println("Hello World!");
     defaultCode: `console.log("Hellow World!")`,
   },
 };
-const PlaygroundProvider = ({ children }) => {
+const PlaygroundProvider = ({ children }) => { 
   const initialItems = {
     [uuid()]: {
       title: "DSA",
@@ -55,14 +55,14 @@ const PlaygroundProvider = ({ children }) => {
 
   const [folders, setFolders] = useState(() => {
     let localData = localStorage.getItem("Playground-Data"); //getting folder
-    if (localData == null || localData == undefined) {
+    if (localData == null || localData === undefined) {
       return initialItems;
     }
     return JSON.parse(localData);
   });
 
   useEffect(() => {
-    localStorage.setItem("playGround-data", JSON.stringify(folders)); //udatinf folder
+    localStorage.setItem("playGround-data", JSON.stringify(folders)); //updating folder
   }, [folders]);
 
   const deleteFolder = (folderId) => {
